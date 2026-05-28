@@ -18,7 +18,7 @@
 - Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use `NOT_Enhost your_script.not`)
 
 ### A little example
-![Example](rep/Example.gif)
+<img src="rep/Example.gif" alt="Example" width="40%">
 
 ### Syntax Overview
 
