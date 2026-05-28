@@ -106,3 +106,7 @@ TIMER2(1IN)> LOG2
 TIMER3(1IN)> LOG3
 // This script will always output 1,2,3, when button Test is pressed
 // You can also can change TIMER1's delay to 2 ms, so the output will be 2,3,1
+
+7. Compilation
+To compile NOT_Engine.dll and NOT_Enhost.exe you need to have [TCC](https://bellard.org/tcc/) in your PATH
+- Run build.bat
