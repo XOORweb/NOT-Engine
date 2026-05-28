@@ -1,8 +1,22 @@
 <img src="rep\NOTEngine-logo.svg" alt="Logo" width="300" height="300" />
 
-# NOT Scripting Language Specification (Release v1.4.2)
+<div align="center">
+  <img src="rep/NOTEngine-logo.svg" alt="NOT Engine" width="280" />
+  
+  # NOT Engine©
+ **Logic gates as a scripting language**
+</div>
+
+<br>
 
 **NOT**(NotEngine) is a declarative, logic-based domain-specific language (DSL) designed for simulating digital circuits and asynchronous signal processing. It uses a line-based syntax to define logic gates and their interconnections.
+
+### Getting Started
+- Download NOT_Engine.dll and NOT_Enhost.exe, or compile from git repository
+- Create any .not file
+- Open it in any text editor
+- Write down your script
+- Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use `NOT_Enhost your_script.not`)
 
 ### Syntax Overview
 
@@ -47,13 +61,6 @@ Syntax: SourceAlias(PortIN)> DestinationAlias
 
 NOTE: Multiple sources can be connected to the same port. If any source on a specific port is True, that port is considered True for the gate's logic calculation, basically a wired OR, however, that doesnt mean, that NOT and NOR are the same thing.
 
-### Getting Started
-- Download NOT_Engine.dll and NOT_Enhost.exe, or compile from git repository
-- Create any .not file
-- Open it in any text editor
-- Write down your script
-- Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use `NOT_Enhost your_script.not`)
-
 ### Special Commands
 Special commands are commands, that do STUFF in engine (Switching modes, and that's all) currently there are
 - trace
@@ -96,7 +103,7 @@ NOT1(1IN)> LOG1
 ```
 
 ```
-// Proof of engine's determenism
+// Proof of engine's determinism
 TIMER1(1)
 TIMER2(1)
 TIMER3(1)
