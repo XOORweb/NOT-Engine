@@ -1,8 +1,8 @@
-NOT Scripting Language Specification (Release v1.4.2)
+# NOT Scripting Language Specification (Release v1.4.2)
 
-NOT(NotEngine) is a declarative, logic-based domain-specific language (DSL) designed for simulating digital circuits and asynchronous signal processing. It uses a line-based syntax to define logic gates and their interconnections.
+**NOT**(NotEngine) is a declarative, logic-based domain-specific language (DSL) designed for simulating digital circuits and asynchronous signal processing. It uses a line-based syntax to define logic gates and their interconnections.
 
-1. Syntax Overview
+### Syntax Overview
 
 The language consists of two primary instruction types: Gate Definitions and Connections.
 
@@ -10,7 +10,7 @@ The language consists of two primary instruction types: Gate Definitions and Con
 - Comments: Lines starting with // are ignored.
 - Whitespace: Leading/trailing whitespace is trimmed; empty lines are skipped.
 
-2. Gate Definitions
+### Gate Definitions
 
 A gate is defined by its type, a unique numeric index, and an optional value/parameter.
 
@@ -33,7 +33,7 @@ Supported Gate Types:
 - LOG: Debug Output. Prints Value to terminal on rising edge (False to True), has 1 input
 - TIMER: Signal Delay. Delays state change by Value milliseconds, has 1 input
 
-3. Connections
+### Connections
 
 Connections define the flow of signals between gates. Each connection targets a specific Input Port on the destination gate.
 
@@ -45,21 +45,21 @@ Syntax: SourceAlias(PortIN)> DestinationAlias
 
 NOTE: Multiple sources can be connected to the same port. If any source on a specific port is True, that port is considered True for the gate's logic calculation, basically a wired OR, however, that doesnt mean, that NOT and NOR are the same thing.
 
-4. Getting Started
+### Getting Started
 - Download NOT_Engine.dll and NOT_Enhost.exe
 - Create any .not file
 - Open it in any text editor
 - Write down your script
 - Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use "NOT_Enhost your_script.not")
 
-5. Special Commands
+### Special Commands
 Special commands are commands, that do STUFF in engine (Switching modes, and that's all) currently there are
 - trace
  Turns on trace mode, where NOT logs all gate and connections changes
 - exit
  self explanatory 
 
-6. Example Code
+### Example Code
 
 // Simple RS Trigger
 // Define Components
@@ -107,6 +107,6 @@ TIMER3(1IN)> LOG3
 // This script will always output 1,2,3, when button Test is pressed
 // You can also can change TIMER1's delay to 2 ms, so the output will be 2,3,1
 
-7. Compilation
+### Compilation
 To compile NOT_Engine.dll and NOT_Enhost.exe you need to have [TCC](https://bellard.org/tcc/) in your PATH
 - Run build.bat
