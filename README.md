@@ -48,7 +48,7 @@ Syntax: SourceAlias(PortIN)> DestinationAlias
 NOTE: Multiple sources can be connected to the same port. If any source on a specific port is True, that port is considered True for the gate's logic calculation, basically a wired OR, however, that doesnt mean, that NOT and NOR are the same thing.
 
 ### Getting Started
-- Download NOT_Engine.dll and NOT_Enhost.exe
+- Download NOT_Engine.dll and NOT_Enhost.exe, or compile from git repository
 - Create any .not file
 - Open it in any text editor
 - Write down your script
