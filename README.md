@@ -115,6 +115,6 @@ TIMER3(1IN)> LOG3
 ```
 
 ### Compilation
-To compile NOT_Engine.dll and NOT_Enhost.exe you need to have [TCC](https://bellard.org/tcc/) in your PATH
-Also you will need [Resourcehacker](https://www.angusj.com/resourcehacker/) in your PATH 
+To compile NOT_Engine.dll and NOT_Enhost.exe you need to have [TCC](https://bellard.org/tcc/) in your PATH  
+Also you will need [Resourcehacker](https://www.angusj.com/resourcehacker/) in your PATH to have the icon on the Enhost
 - Run `build` in the project directory
