@@ -1,4 +1,4 @@
-![logo](rep/NOTEngine-logo.svg)
+<img src="rep\NOTEngine-logo.svg" alt="Logo" width="150" height="150" />
 # NOT Scripting Language Specification (Release v1.4.2)
 
 **NOT**(NotEngine) is a declarative, logic-based domain-specific language (DSL) designed for simulating digital circuits and asynchronous signal processing. It uses a line-based syntax to define logic gates and their interconnections.
