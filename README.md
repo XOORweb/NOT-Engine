@@ -18,7 +18,7 @@
 - Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use `NOT_Enhost your_script.not`)
 
 ### A little example
-![Example](rep/Example.mp4)  
+![Example](https://raw.githubusercontent.com/X0ORweb/NOT-Engine/main/rep/Example.mp4)
 
 ### Syntax Overview
 
