@@ -11,7 +11,7 @@
 
 
 ### Getting Started
-- Download NOT_Engine.dll and NOT_Enhost.exe, or [compile](https://github.com/XOORweb/NOT-Engine#compilation) it
+- Download NOT_Engine.dll and NOT_Enhost.exe, or [compile](#compilation) it
 - Create any .not file
 - Open it in any text editor
 - Write down your script
