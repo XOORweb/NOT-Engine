@@ -1,9 +1,7 @@
-<img src="rep\NOTEngine-logo.svg" alt="Logo" width="300" height="300" />
-
 <div align="center">
   <img src="rep/NOTEngine-logo.svg" alt="NOT Engine" width="280" />
   
-  # NOT Engine©
+  # NOT Engine
  **Logic gates as a scripting language**
 </div>
 
