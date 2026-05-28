@@ -11,7 +11,7 @@
 
 
 ### Getting Started
-- Download NOT_Engine.dll and NOT_Enhost.exe, or compile from git repository
+- Download NOT_Engine.dll and NOT_Enhost.exe, or [compile](https://github.com/XOORweb/NOT-Engine#compilation) it
 - Create any .not file
 - Open it in any text editor
 - Write down your script
@@ -126,4 +126,5 @@ TIMER3(1IN)> LOG3
 ### Compilation
 To compile NOT_Engine.dll and NOT_Enhost.exe you need to have [TCC](https://bellard.org/tcc/) in your PATH  
 Also you will need [Resourcehacker](https://www.angusj.com/resourcehacker/) in your PATH to have the icon on the Enhost
-- Run `build` in the project directory
+- clone git repository through `gh repo clone XOORweb/NOT-Engine`
+- Run `build` in the repository directory
