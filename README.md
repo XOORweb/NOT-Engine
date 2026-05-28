@@ -50,7 +50,7 @@ NOTE: Multiple sources can be connected to the same port. If any source on a spe
 - Create any .not file
 - Open it in any text editor
 - Write down your script
-- Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use "NOT_Enhost your_script.not")
+- Drag n drop it on enhost (OR open console in the same directory, as where enhost is, and use `NOT_Enhost your_script.not`)
 
 ### Special Commands
 Special commands are commands, that do STUFF in engine (Switching modes, and that's all) currently there are
@@ -60,7 +60,7 @@ Special commands are commands, that do STUFF in engine (Switching modes, and tha
  self explanatory 
 
 ### Example Code
-
+```
 // Simple RS Trigger
 // Define Components
 NOR1
@@ -84,12 +84,16 @@ BUTTON5(2IN)> AND6
 BUTTON5(2IN)> AND7
 AND6(1IN)> LOG8
 AND7(1IN)> LOG9
+```
 
+```
 // "Hello, World!" Example
 NOT1
 LOG1(Hello, World!)
 NOT1(1IN)> LOG1
+```
 
+```
 // Proof of engine's determenism
 TIMER1(1)
 TIMER2(1)
@@ -106,7 +110,8 @@ TIMER2(1IN)> LOG2
 TIMER3(1IN)> LOG3
 // This script will always output 1,2,3, when button Test is pressed
 // You can also can change TIMER1's delay to 2 ms, so the output will be 2,3,1
+```
 
 ### Compilation
 To compile NOT_Engine.dll and NOT_Enhost.exe you need to have [TCC](https://bellard.org/tcc/) in your PATH
-- Run build.bat
+- Run `build` in the project directory
