@@ -6,9 +6,9 @@
 </div>
 
 <br>
-![License](https://img.shields.io/github/license/XOORweb/NOT-Engine?color=blue)
-![Latest Release](https://img.shields.io/github/v/release/XOORweb/NOT-Engine?color=orange)
-![Repo Size](https://img.shields.io/github/repo-size/XOORweb/NOT-Engine?color=success)
+![License](https://img.shields.io/github/license/XOORweb/NOT-Engine?color=blue)  
+![Latest Release](https://img.shields.io/github/v/release/XOORweb/NOT-Engine?color=orange)  
+![Repo Size](https://img.shields.io/github/repo-size/XOORweb/NOT-Engine?color=success)  
 **NOT**(NotEngine) is a declarative, logic-based domain-specific language (DSL) designed for simulating digital circuits and asynchronous signal processing. It uses a line-based syntax to define logic gates and their interconnections.
 
 
