@@ -7,7 +7,7 @@
 
 <br>
 
-![License](https://img.shields.io/badge/license-MIT-blue) ![Release](https://img.shields.io/badge/release-v1.0.0-orange)
+![License](https://img.shields.io/badge/license-MIT-blue) ![Release](https://img.shields.io/badge/release-1.4.2-orange)
 
 **NOT**(NotEngine) is a declarative, logic-based domain-specific language (DSL) designed for simulating digital circuits and asynchronous signal processing. It uses a line-based syntax to define logic gates and their interconnections.
 
