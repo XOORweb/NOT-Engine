@@ -78,9 +78,9 @@ When Trace Mode is enabled, every gate state change and connection event is logg
 GATE0: 1/0 
 GATE1 -> GATE2@P1(0/1)//C, P2(0/1)//B (0/1)//A
 
-Breakdown:
-Gate State (GATE0: 1/0): Shows the current operational state of the gate (0 for OFF, 1 for ON).
+Breakdown:  
 
+Gate State (GATE0: 1/0): Shows the current operational state of the gate (0 for OFF, 1 for ON).  
 Connection State:
 - A: The state of the connection between GATE1 and GATE2.
 - B: The state of the second input port (P2).
