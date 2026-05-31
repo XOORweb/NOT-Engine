@@ -36,16 +36,31 @@ void engine_stabilize_internal(EngineCore *engine);
 Gate* find_gate_by_alias(EngineCore *engine, const char *alias);
 void gate_update_input(Gate *g, int port, bool signal);
 
-// Умная функция трейса: кодирует порт прямо в строку "to", если он передан (>= 0)
+static inline int get_gate_port_signal(Gate *g, int port_idx) {
+    if (!g || !g->inputs) return 0;
+    for (int i = 0; i < g->inputs_count; i++) {
+        if (g->inputs[i].port == port_idx) {
+            return g->inputs[i].signal ? 1 : 0;
+        }
+    }
+    return 0;
+}
 static inline void trigger_trace(EngineCore *engine, const char *from, const char *to, int port, bool state) {
     if (engine->trace_mode && engine->on_trace_raw) {
         if (to == NULL || port < 0) {
-            // Трейс изменения состояния самого элемента
             engine->on_trace_raw(from, NULL, state);
         } else {
-            // Трейс соединения: пишем "ИмяГейта@Порт" (например, "AND2@1")
-            char target_buf[64];
-            sprintf(target_buf, "%s@%d", to, port + 1); 
+            Gate *target_gate = find_gate_by_alias(engine, to);
+            
+            int p1_state = get_gate_port_signal(target_gate, 0);
+            int p2_state = get_gate_port_signal(target_gate, 1);
+
+            if (port == 0) p1_state = state ? 1 : 0;
+            if (port == 1) p2_state = state ? 1 : 0;
+
+            char target_buf[128];
+            sprintf(target_buf, "%s@P1(%d),P2(%d)", to, p1_state, p2_state); 
+            
             engine->on_trace_raw(from, target_buf, state);
         }
     }

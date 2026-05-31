@@ -67,7 +67,7 @@ void print_logo() {
            "     \xDB\xDB\xDB\xDB\xDB\xDB\xDB\xDB\xDB\xDB     \n"
            "     \xDB\xDB\xDB\xDB\xDB          \n"
            "       \xDB\xDB\xDB\xDB\xDB\xDB\xDB      \n\n"
-           " NOT Engine v1.4.2\n\n");
+           " NOT Engine v1.4.3\n\n");
     set_color(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
 }
 
