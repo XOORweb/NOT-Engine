@@ -87,6 +87,8 @@ Connection State:
 - B: The state of the second input port (P2).
 - C: The state of the first input port (P1).
 
+### Known bugs
+- Oscillations do work, but they kinda stop all other gates
 ### Example Code
 ```
 // Simple RS Trigger
