@@ -290,10 +290,15 @@ void engine_recompute(EngineCore *engine, Gate *g) {
     free(signals);
 }
 
+#define MAX_STABILIZATION_STEPS 10
+
 void engine_stabilize_internal(EngineCore *engine) {
     bool changed = true;
-    while (changed) {
+    int steps = 0;
+    while (changed && steps < MAX_STABILIZATION_STEPS) {
         changed = false;
+        steps++;
+
         for (int i = 0; i < engine->gates_count; i++) {
             Gate *g = &engine->gates[i];
             if (strcmp(g->type, "BUTTON") == 0) continue;
@@ -311,6 +316,15 @@ void engine_stabilize_internal(EngineCore *engine) {
                     trigger_trace(engine, g->alias, conn->to->alias, conn->to_port, g->state);
                     gate_update_input(conn->to, conn->to_port, g->state);
                 }
+            }
+        }
+    }
+
+    if (changed && steps >= MAX_STABILIZATION_STEPS) {
+        for (int i = 0; i < engine->gates_count; i++) {
+            Gate *g = &engine->gates[i];
+            if (strcmp(g->type, "BUTTON") != 0) {
+                schedule_timer_event(engine, g->alias, g->state, 1);
             }
         }
     }
