@@ -290,7 +290,7 @@ void engine_recompute(EngineCore *engine, Gate *g) {
     free(signals);
 }
 
-#define MAX_STABILIZATION_STEPS 10
+#define MAX_STABILIZATION_STEPS 2
 
 void engine_stabilize_internal(EngineCore *engine) {
     bool changed = true;
